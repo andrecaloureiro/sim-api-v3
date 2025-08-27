@@ -14,7 +14,7 @@
 [INFO] 
 [INFO] --- compiler:3.14.0:compile (default-compile) @ sim-api ---
 [INFO] Recompiling the module because of changed source code.
-[INFO] Compiling 16 source files with javac [debug parameters release 17] to target\classes
+[INFO] Compiling 18 source files with javac [debug parameters release 17] to target\classes
 [INFO] 
 [INFO] --- resources:3.3.1:testResources (default-testResources) @ sim-api ---
 [INFO] Copying 1 resource from src\test\resources to target\test-classes
@@ -30,8 +30,6 @@
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.hackathon.sim_api.SimApiApplicationTests
-00:16:56.120 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.hackathon.sim_api.SimApiApplicationTests]: SimApiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-00:16:56.420 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.hackathon.SimApiApplication for test class com.hackathon.sim_api.SimApiApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -42,34 +40,32 @@
 
  :: Spring Boot ::                (v3.5.5)
 
-2025-08-27T00:16:57.850-03:00  INFO 8488 --- [sim-api] [           main] c.h.sim_api.SimApiApplicationTests       : Starting SimApiApplicationTests using Java 17.0.16 with PID 8488 (started by AndreL in C:\Users\AndreL\MyCodes\cef-hackathon\sim-api-v3)
-2025-08-27T00:16:57.854-03:00  INFO 8488 --- [sim-api] [           main] c.h.sim_api.SimApiApplicationTests       : The following 1 profile is active: "test"
-2025-08-27T00:17:01.308-03:00  INFO 8488 --- [sim-api] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-27T00:17:01.689-03:00  INFO 8488 --- [sim-api] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 352 ms. Found 2 JPA repository interfaces.
-2025-08-27T00:17:02.984-03:00  INFO 8488 --- [sim-api] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-27T00:17:03.199-03:00  INFO 8488 --- [sim-api] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-08-27T00:17:03.345-03:00  INFO 8488 --- [sim-api] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-08-27T00:17:04.697-03:00  INFO 8488 --- [sim-api] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-27T00:17:04.851-03:00  INFO 8488 --- [sim-api] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-08-27T00:17:05.948-03:00  INFO 8488 --- [sim-api] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2025-08-27T00:17:05.954-03:00  INFO 8488 --- [sim-api] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-08-27T00:17:06.029-03:00  WARN 8488 --- [sim-api] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-27T00:17:06.109-03:00  INFO 8488 --- [sim-api] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
+2025-08-27T14:43:15.187-03:00  INFO 16428 --- [sim-api] [           main] c.h.sim_api.SimApiApplicationTests       : Starting SimApiApplicationTests using Java 17.0.16 with PID 16428 (started by AndreL in C:\Users\AndreL\MyCodes\cef-hackathon\sim-api-v3)
+2025-08-27T14:43:15.220-03:00  INFO 16428 --- [sim-api] [           main] c.h.sim_api.SimApiApplicationTests       : The following 1 profile is active: "test"
+2025-08-27T14:43:21.369-03:00  INFO 16428 --- [sim-api] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-27T14:43:21.809-03:00  INFO 16428 --- [sim-api] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 362 ms. Found 0 JPA repository interfaces.
+2025-08-27T14:43:28.187-03:00  INFO 16428 --- [sim-api] [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2025-08-27T14:43:29.374-03:00  INFO 16428 --- [sim-api] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-27T14:43:29.607-03:00  INFO 16428 --- [sim-api] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-08-27T14:43:29.754-03:00  INFO 16428 --- [sim-api] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-27T14:43:30.530-03:00  INFO 16428 --- [sim-api] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-27T14:43:30.600-03:00  WARN 16428 --- [sim-api] [           main] org.hibernate.orm.connections.pooling    : HHH10001002: Using built-in connection pool (not intended for production use)
+2025-08-27T14:43:30.946-03:00  WARN 16428 --- [sim-api] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-27T14:43:31.039-03:00  INFO 16428 --- [sim-api] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:./simulacao]
+	Database driver: org.h2.Driver
 	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
+	Autocommit mode: false
 	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-27T00:17:08.101-03:00  INFO 8488 --- [sim-api] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-27T00:17:08.239-03:00  INFO 8488 --- [sim-api] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-27T00:17:09.803-03:00  WARN 8488 --- [sim-api] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-27T00:17:11.823-03:00  INFO 8488 --- [sim-api] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2025-08-27T00:17:11.898-03:00  INFO 8488 --- [sim-api] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2025-08-27T00:17:12.107-03:00  INFO 8488 --- [sim-api] [           main] c.h.sim_api.SimApiApplicationTests       : Started SimApiApplicationTests in 15.217 seconds (process running for 19.114)
-Inserindo dados iniciais na tabela de produtos...
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.88 s -- in com.hackathon.sim_api.SimApiApplicationTests
+	Minimum pool size: 1
+	Maximum pool size: 20
+2025-08-27T14:43:33.634-03:00  INFO 16428 --- [sim-api] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-27T14:43:33.654-03:00  INFO 16428 --- [sim-api] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-27T14:43:34.125-03:00  WARN 16428 --- [sim-api] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-27T14:43:36.394-03:00  INFO 16428 --- [sim-api] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-08-27T14:43:36.488-03:00  INFO 16428 --- [sim-api] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-27T14:43:36.782-03:00  INFO 16428 --- [sim-api] [           main] c.h.sim_api.SimApiApplicationTests       : Started SimApiApplicationTests in 28.192 seconds (process running for 32.377)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 31.30 s -- in com.hackathon.sim_api.SimApiApplicationTests
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -89,6 +85,6 @@ Inserindo dados iniciais na tabela de produtos...
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  45.437 s
-[INFO] Finished at: 2025-08-27T00:17:18-03:00
+[INFO] Total time:  01:05 min
+[INFO] Finished at: 2025-08-27T14:43:42-03:00
 [INFO] ------------------------------------------------------------------------
