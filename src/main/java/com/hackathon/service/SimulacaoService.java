@@ -30,13 +30,15 @@ public class SimulacaoService {
     private final SimulacaoRepository simulacaoRepository;
     private final CalculoService calculoService;
     private final ObjectMapper objectMapper;
+    private final EventHubService eventHubService; 
 
-    public SimulacaoService(ProdutoRepository produtoRepository, SimulacaoRepository simulacaoRepository, CalculoService calculoService) {
+    public SimulacaoService(ProdutoRepository produtoRepository, SimulacaoRepository simulacaoRepository, CalculoService calculoService, EventHubService eventHubService) {
         this.produtoRepository = produtoRepository;
         this.simulacaoRepository = simulacaoRepository;
         this.calculoService = calculoService;
         this.objectMapper = new ObjectMapper();
         this.objectMapper.registerModule(new JavaTimeModule());
+        this.eventHubService = eventHubService;
     }
 
     public SimulacaoResponseDTO simularEmprestimo(SimulacaoRequestDTO request) {
@@ -83,6 +85,7 @@ public class SimulacaoService {
             try {
                 String jsonResponse = objectMapper.writeValueAsString(response);
                 novaSimulacao.setResultadoSimulacaoJson(jsonResponse);
+                eventHubService.sendMessage(jsonResponse); 
             } catch (JsonProcessingException e) {
                 e.printStackTrace();
             }
