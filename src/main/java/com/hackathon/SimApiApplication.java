@@ -1,3 +1,10 @@
+/**
+ * Aplicação principal para a API de Simulação de Crédito.
+ * Desafio: CEF-Hackathon-ago2025
+ * * @author Andre C A Loureiro (c107192)
+ * @version 1.0.0
+ */
+
 package com.hackathon;
 
 import org.springframework.boot.SpringApplication;

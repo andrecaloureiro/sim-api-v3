@@ -9,16 +9,19 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.hackathon</groupId>
-	<artifactId>sim-api</artifactId>
+<artifactId>sim-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>sim-api</name>
-	<description>SpringBoot sim api-v2</description>
+	<name>CEF-Hackathon-ago2025</name>
+	<description>API de Simulação de Crédito para o CEF-Hackathon-ago2025</description>
 	<url/>
 	<licenses>
 		<license/>
 	</licenses>
 	<developers>
-		<developer/>
+		<developer>
+			<id>c107192</id>
+			<name>Andre C A Loureiro</name>
+		</developer>
 	</developers>
 	<scm>
 		<connection/>
